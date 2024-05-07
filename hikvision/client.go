@@ -75,7 +75,7 @@ type Client struct {
 
 // NewClient is a constructor for the Client object.
 func NewClient(host, username, password string) (*Client, error) {
-	u, err := url.Parse("http://" + host)
+	u, err := url.Parse("https://" + host)
 	if err != nil {
 		return nil, err
 	}
